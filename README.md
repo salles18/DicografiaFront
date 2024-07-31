@@ -40,18 +40,18 @@ Este projeto é uma aplicação web para gerenciar a discografia da dupla caipir
    cd discografia-backend
 Instale as dependências:
 
-``sh
+sh
 Copiar código
 composer install
 Configure o banco de dados no arquivo .env:
 
-``env
+env
 Copiar código
 DB_CONNECTION=sqlite
 DB_DATABASE=/caminho/para/seu/database.sqlite
 Execute as migrations:
 
-``sh
+sh
 Copiar código
 php artisan migrate
 Inicie o servidor:
@@ -62,18 +62,18 @@ php artisan serve
 Frontend (React)
 Clone o repositório:
 
-```sh
+sh
 Copiar código
 git clone https://github.com/seu-usuario/discografia-frontend.git
 cd discografia-frontend
 Instale as dependências:
 
-```sh
+sh
 Copiar código
 npm install
 Inicie o servidor de desenvolvimento:
 
-```sh
+sh
 Copiar código
 npm start
 Configuração de CORS
