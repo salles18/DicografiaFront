@@ -40,10 +40,10 @@ Este projeto é uma aplicação web para gerenciar a discografia da dupla caipir
    cd discografia-backend
 
    
-##Configuração de CORS
+## Configuração de CORS
 Certifique-se de que o CORS está configurado corretamente no backend para permitir solicitações do frontend. O Laravel já inclui um middleware para CORS. Verifique o arquivo config/cors.php para ajustar as configurações conforme necessário.
 
-##Estrutura do Projeto
+## Estrutura do Projeto
 Backend
 app/Http/Controllers: Controladores da API
 database/migrations: Migrations do banco de dados
@@ -55,10 +55,10 @@ src/assets: Imagens e outros arquivos estáticos
 Contribuição
 Contribuições são bem-vindas! Se você tiver sugestões, correções ou melhorias, sinta-se à vontade para abrir um issue ou enviar um pull request.
 
-Licença
+## Licença
 Este projeto está licenciado sob a MIT License.
 
-Contato
+## Contato
 Para qualquer dúvida ou sugestão, entre em contato:
 
 Seu Nome - jv.salles2015@gmail.com
