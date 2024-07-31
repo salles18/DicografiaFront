@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Projeto de Gerenciamento de Discografia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação web para gerenciar a discografia da dupla caipira Tião Carreiro e Pardinho. A aplicação é dividida em duas partes: uma API REST construída com Laravel e um front-end desenvolvido com React e Bootstrap.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **Backend:** Laravel (PHP)
+- **Frontend:** React.js
+- **Estilização:** Bootstrap
+- **Banco de Dados:** SQLite (ou outro conforme sua configuração)
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Ver Lista de Álbuns e Faixas**
+   - Visualize todos os álbuns e suas respectivas faixas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Pesquisar Álbuns e Faixas**
+   - Pesquise álbuns e faixas por nome.
 
-### `npm test`
+3. **Adicionar um Novo Álbum**
+   - Permite adicionar um novo álbum à discografia.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Adicionar uma Nova Faixa em um Álbum**
+   - Adicione uma faixa a um álbum existente.
 
-### `npm run build`
+5. **Excluir uma Faixa**
+   - Remova uma faixa específica de um álbum.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. **Excluir um Álbum**
+   - Remova um álbum da discografia.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend (Laravel)
 
-### `npm run eject`
+1. Clone o repositório:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```sh
+   git clone https://github.com/seu-usuario/discografia-backend.git
+   cd discografia-backend
+Instale as dependências:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+sh
+Copiar código
+composer install
+Configure o banco de dados no arquivo .env:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+env
+Copiar código
+DB_CONNECTION=sqlite
+DB_DATABASE=/caminho/para/seu/database.sqlite
+Execute as migrations:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+sh
+Copiar código
+php artisan migrate
+Inicie o servidor:
 
-## Learn More
+sh
+Copiar código
+php artisan serve
+Frontend (React)
+Clone o repositório:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+sh
+Copiar código
+git clone https://github.com/seu-usuario/discografia-frontend.git
+cd discografia-frontend
+Instale as dependências:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+sh
+Copiar código
+npm install
+Inicie o servidor de desenvolvimento:
 
-### Code Splitting
+sh
+Copiar código
+npm start
+Configuração de CORS
+Certifique-se de que o CORS está configurado corretamente no backend para permitir solicitações do frontend. O Laravel já inclui um middleware para CORS. Verifique o arquivo config/cors.php para ajustar as configurações conforme necessário.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##Estrutura do Projeto
+Backend
+app/Http/Controllers: Controladores da API
+database/migrations: Migrations do banco de dados
+routes/api.php: Rotas da API
+##Frontend
+src/App.js: Componente principal da aplicação React
+src/components: Componentes reutilizáveis
+src/assets: Imagens e outros arquivos estáticos
+Contribuição
+Contribuições são bem-vindas! Se você tiver sugestões, correções ou melhorias, sinta-se à vontade para abrir um issue ou enviar um pull request.
 
-### Analyzing the Bundle Size
+##Licença
+Este projeto está licenciado sob a MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contato
+Para qualquer dúvida ou sugestão, entre em contato:
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Seu Nome - jv.salles2015@gmail.com
+GitHub - Salles18
