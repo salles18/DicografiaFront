@@ -7,7 +7,7 @@ Este projeto é uma aplicação web para gerenciar a discografia da dupla caipir
 - **Backend:** Laravel (PHP)
 - **Frontend:** React.js
 - **Estilização:** Bootstrap
-- **Banco de Dados:** Mysql 
+- **Banco de Dados:** Mysql
 
 ## Funcionalidades
 
@@ -38,45 +38,9 @@ Este projeto é uma aplicação web para gerenciar a discografia da dupla caipir
    ```sh
    git clone https://github.com/seu-usuario/discografia-backend.git
    cd discografia-backend
-Instale as dependências:
 
-sh
-Copiar código
-composer install
-Configure o banco de dados no arquivo .env:
-
-env
-Copiar código
-DB_CONNECTION=sqlite
-DB_DATABASE=/caminho/para/seu/database.sqlite
-Execute as migrations:
-
-sh
-Copiar código
-php artisan migrate
-Inicie o servidor:
-
-```sh
-Copiar código
-php artisan serve
-Frontend (React)
-Clone o repositório:
-
-sh
-Copiar código
-git clone https://github.com/seu-usuario/discografia-frontend.git
-cd discografia-frontend
-Instale as dependências:
-
-sh
-Copiar código
-npm install
-Inicie o servidor de desenvolvimento:
-
-sh
-Copiar código
-npm start
-Configuração de CORS
+   
+##Configuração de CORS
 Certifique-se de que o CORS está configurado corretamente no backend para permitir solicitações do frontend. O Laravel já inclui um middleware para CORS. Verifique o arquivo config/cors.php para ajustar as configurações conforme necessário.
 
 ##Estrutura do Projeto
@@ -84,14 +48,14 @@ Backend
 app/Http/Controllers: Controladores da API
 database/migrations: Migrations do banco de dados
 routes/api.php: Rotas da API
-##Frontend
+Frontend
 src/App.js: Componente principal da aplicação React
 src/components: Componentes reutilizáveis
 src/assets: Imagens e outros arquivos estáticos
 Contribuição
 Contribuições são bem-vindas! Se você tiver sugestões, correções ou melhorias, sinta-se à vontade para abrir um issue ou enviar um pull request.
 
-##Licença
+Licença
 Este projeto está licenciado sob a MIT License.
 
 Contato
@@ -99,3 +63,4 @@ Para qualquer dúvida ou sugestão, entre em contato:
 
 Seu Nome - jv.salles2015@gmail.com
 GitHub - Salles18
+
